@@ -1,0 +1,140 @@
+/* ====== ESTILOS BASE ====== */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ====== FORMULARIO ====== */
+form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ====== GRID PARA LOS 6 PRIMEROS CAMPOS ====== */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 25px;
+}
+
+/* ====== CAMPOS ====== */
+.grid-2col label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.grid-2col input[type="text"],
+.grid-2col select {
+  width: 100%;
+  height: 42px; /* 🔹 mismo alto */
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.grid-2col input[type="text"]:focus,
+.grid-2col select:focus {
+  border-color: #1aab8a;
+  box-shadow: 0 0 5px rgba(26, 171, 138, 0.3);
+}
+
+/* ====== LABELS GENERALES ====== */
+label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* ====== CHECKBOXES DE MATERIALES ====== */
+.materiales-group {
+  display: flex;
+  flex-direction: column; /* para que el label quede arriba y los checkboxes debajo */
+  gap: 0.3rem; /* reduce el espacio entre label y checkboxes */
+}
+
+.materiales-group label {
+  margin-bottom: 0; /* elimina margen extra debajo del label */
+  font-weight: bold;
+}
+
+.materiales-group .checkboxes {
+  display: flex;
+  gap: 1rem; /* separa los checkboxes horizontalmente */
+  align-items: center; /* alinea los cuadros con el texto */
+}
+
+
+/* ====== TEXTAREA ====== */
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  resize: vertical;
+  min-height: 80px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #1aab8a;
+  box-shadow: 0 0 5px rgba(26, 171, 138, 0.3);
+}
+
+/* ====== BOTÓN ====== */
+button {
+  background-color: #1aab8a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.2s, transform 0.1s;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #159876;
+  transform: translateY(-2px);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px; /* tamaño grande */
+  margin-bottom: 20px; /* separación del primer input */
+  color: black; /* opcional: color destacado */
+  font-weight: bold;
+}
