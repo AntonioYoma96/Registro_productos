@@ -41,7 +41,7 @@ form {
 .grid-2col input[type="text"],
 .grid-2col select {
   width: 100%;
-  height: 42px; /* 🔹 mismo alto */
+  height: 42px;
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -73,14 +73,14 @@ label {
 }
 
 .materiales-group label {
-  margin-bottom: 0; /* elimina margen extra debajo del label */
+  margin-bottom: 0;
   font-weight: bold;
 }
 
 .materiales-group .checkboxes {
   display: flex;
   gap: 1rem; /* separa los checkboxes horizontalmente */
-  align-items: center; /* alinea los cuadros con el texto */
+  align-items: center;
 }
 
 
@@ -133,8 +133,8 @@ button:hover {
 
 .form-title {
   text-align: center;
-  font-size: 24px; /* tamaño grande */
-  margin-bottom: 20px; /* separación del primer input */
-  color: black; /* opcional: color destacado */
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
   font-weight: bold;
 }

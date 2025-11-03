@@ -2,7 +2,7 @@
 $host = "localhost";
 $dbname = "registro_productos";
 $user = "postgres";
-$pass = "camarasecreta";
+$pass = "TU_CONTRASEÑA";
 
 try {
   $conexion = new PDO("pgsql:host=$host;dbname=$dbname", $user, $pass);

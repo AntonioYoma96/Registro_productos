@@ -48,13 +48,13 @@ function guardarProducto() {
       if (data.success) {
         alert("Producto guardado con éxito.");
 
-        // 🔹 Blanquear formulario
+        // Blanquear formulario
         form.reset();
 
         cargarBodegas();
         cargarMonedas();
 
-        // 🔹 Vaciar el select de sucursales
+        // Vaciar el select de sucursales
         document.getElementById("sucursal").innerHTML = "<option value=''>Seleccione...</option>";
 
       } else {
@@ -93,7 +93,7 @@ function cargarMonedas() {
     });
 }
 
-// 🔹 Cuando la página cargue por primera vez:
+// Cuando la página cargue por primera vez:
 window.onload = () => {
   cargarBodegas();
   cargarMonedas();
